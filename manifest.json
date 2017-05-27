@@ -1,25 +1,25 @@
 {
   "name": "DistractionTube-Avoider",
   "description": "Blocks the \"Recommended for you\" related videos to stop you from getting distracted",
-  "version": "2.0",
+  "version": "0.5",
   "permissions": [
     "activeTab",
 	"tabs",
-	"http://*/*", 
-	"https://*/*"
+	"*://*.youtube.com/*"
   ],
   "content_scripts": [
     {
-      "matches": ["http://*/*", "https://*/*"],
+      "matches": ["*://*.youtube.com/*"],
       "js": ["myscripts.js"],
 	  "run_at": "document_end"
     }
   ],
   "web_accessible_resources": [
-    "blockthumbnail.png"
+    "blockthumbnail.png",
+	"blockthumbnail2.png"
   ],
   "browser_action": {
-    "default_title": "Make this page red"
+    "default_title": "Block Distracting Videos"
   },
   "manifest_version": 2
 }

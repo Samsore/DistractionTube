@@ -32,7 +32,7 @@ function blockThumbnail(){
 	}
 	
 }
-alert("Fininshed JS")
+alert("Fininshed JS");
 
 /**
  * Removes the Hyperlinks from the related video

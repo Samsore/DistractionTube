@@ -7,6 +7,14 @@
 	"tabs",
 	"*://*.youtube.com/*"
   ],
+  "browser_action": {
+          "default_icon": {                   
+            "16": "hotlinebling meme.png"         
+          },
+          "default_title": "DistractionTube-Avoider",      
+          "default_popup": "popup.html"        
+    },
+	
   "content_scripts": [
     {
       "matches": ["*://*.youtube.com/*"],
@@ -18,8 +26,5 @@
     "blockthumbnail.png",
 	"blockthumbnail2.png"
   ],
-  "browser_action": {
-    "default_title": "Block Distracting Videos"
-  },
   "manifest_version": 2
 }

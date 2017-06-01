@@ -3,6 +3,7 @@
   "description": "Blocks the \"Recommended for you\" related videos to stop you from getting distracted",
   "version": "0.5",
   "permissions": [
+	"webNavigation",
     "activeTab",
 	"tabs",
 	"*://*.youtube.com/*"
@@ -21,6 +22,11 @@
       "js": ["blocker.js"],
 	  "run_at": "document_end"
     }
+  ],
+  "background": [
+	{
+		"scripts": ["blocker.js"]	
+	}
   ],
   "web_accessible_resources": [
     "blockthumbnail.png",

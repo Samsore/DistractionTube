@@ -7,8 +7,8 @@
  *
  */
 
-//var myElement = document.getElementById("eow-title");
-//myElement.innerHTML = "Removed Title";
+alert("Fininshed JS");
+
 blockThumbnail();
 function blockThumbnail(){
 	//Get all of the related video elements
@@ -32,7 +32,6 @@ function blockThumbnail(){
 	}
 	
 }
-alert("Fininshed JS");
 
 /**
  * Removes the Hyperlinks from the related video

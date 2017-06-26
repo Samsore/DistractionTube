@@ -7,9 +7,9 @@
  *
  */
 
-alert("Fininshed JS");
+document.addEventListener("spfdone", blockThumbnail);
+document.addEventListener("DOMContentLoaded", blockThumbnail);
 
-blockThumbnail();
 function blockThumbnail(){
 	//Get all of the related video elements
 	var relatedVideos = document.getElementsByClassName("stat view-count");
@@ -25,12 +25,11 @@ function blockThumbnail(){
 			
 			//Remove/change thumbnail attribtutes
 			var thumbnailElement = contentWrapperElement.nextElementSibling.firstElementChild.firstElementChild.firstElementChild;
-			thumbnailElement.setAttribute("src", chrome.extension.getURL("blockthumbnail2.png"));
-			thumbnailElement.setAttribute("data-thumb", chrome.extension.getURL("blockthumbnail2.png"));
+			thumbnailElement.setAttribute("src", chrome.extension.getURL("images/blockthumbnail2.png"));
+			thumbnailElement.setAttribute("data-thumb", chrome.extension.getURL("images/blockthumbnail2.png"));
 			thumbnailElement.nextElementSibling.innerHTML = ""; //watch time
 		}
 	}
-	
 }
 
 /**
@@ -53,9 +52,6 @@ function removeElementCompletely(elem){
 	elem.parentNode.setAttribute("class", "");
 	elem.parentNode.removeChild(elem);
 }
-
-
-
 
 
 
